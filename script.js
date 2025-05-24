@@ -177,7 +177,7 @@ checkoutBtn.addEventListener("click", function(){
     }, 0);
     const message = encodeURIComponent(`${cartItems} Valor total da compra: R$${totalPrice.toFixed(2)}`);
 
-    const phone ="31975783629"
+    const phone ="31994038782"
 
     window.open(`https://wa.me/${phone}?text=${message} Endereço: ${addressInput.value}`, "_blank");
 
