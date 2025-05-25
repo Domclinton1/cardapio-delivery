@@ -187,12 +187,16 @@ checkoutBtn.addEventListener("click", function(){
 })
 
 //verificar a hora e manipular o card horario
-function checkRestaurantOpen(){
+function checkRestaurantOpen() {
     const data = new Date();
     const hora = data.getHours();
-    return hora >= 6 && hora < 22;
-}
+    const diaSemana = data.getDay(); // 0 = Domingo, 1 = Segunda, ..., 6 = Sábado
 
+    const abertoHoje = diaSemana !== 1; // Aberto se NÃO for segunda (1)
+    const horarioAberto = hora >= 8 && hora < 24;
+
+    return abertoHoje && horarioAberto;
+}
 const spanItem = document.getElementById("date-span")
 const isOpen = checkRestaurantOpen();
 
@@ -204,3 +208,25 @@ if(isOpen){
     spanItem.classList.add("bg-red-500")
 }
 
+
+const navLinks = document.querySelectorAll(".nav-link");
+
+  window.addEventListener("scroll", () => {
+    const scrollPosition = window.scrollY + 200; // compensa o menu fixo
+
+    navLinks.forEach(link => {
+      const sectionId = link.getAttribute("href").substring(1);
+      const section = document.getElementById(sectionId);
+
+      if (section) {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+
+        if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+          link.classList.add("border-b-2", "border-purple-700");
+        } else {
+          link.classList.remove("border-b-2", "border-purple-700");
+        }
+      }
+    });
+  });
