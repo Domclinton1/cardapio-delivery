@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hamburgueria </title>
+    <title>CearAçaí Burguer: lanchonete com entrega rápida e grátis </title>
 
     <meta property="og:type" content="website"/>
-    <meta property="og:title" content="O melhor hamburguer de Belo Horizonte!"/>
-    <meta property="og:description" content="O melhor hamburguer artesanal de Belo Horizonte e região metropolitana."/>
+    <meta property="og:title" content="As melhores vitaminas de açaí e sanduíches da região"/>
+    <meta property="og:description" content="Só aqui você encontra as melhores vitaminas de açaí e os melhores sanduíches do bairro Pindorama e região."/>
     <meta property="og:site_name" content="Monster Burguer"/>
-    <meta property="og:image" content="https://cardapio-delivery.vercel.app/assets/hamb-1.png">
+    <meta property="og:image" content="https://cardapio-delivery.vercel.app/ceara-acai/assets/logo.png">
+
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
 
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" href="./styles/output.css">
@@ -26,7 +28,7 @@
 ">
     <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
         <div class="w-full h-full flex flex-col justify-center items-center">
-            <img src="./assets/ceara-acai-logo.png" alt="Logo - Burguer" class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200">
+            <img src="./assets/logo.png" alt="Logo - Burguer" class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200">
             <h1 class="text-4xl mt-4 mb-2 font-bold text-white">Ceará Açaí Burguer</h1>
             <span class="text-white font-medium text-center">Rua Guararapes, n° 1860, Pindorama <br> Belo Horizonte</span>
             <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
@@ -56,12 +58,13 @@
     <div id="menu">
         <main class=" grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
             <div class="flex gap-2">
-                <img src="./assets/hamb-1.png" alt="Hamburguer-1" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <img src="./assets/misto-quente.png" alt="Misto quente" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                 <div>
                     <p class="font-bold">Misto Quente</p>
                     <p class="text-sm">Pão de forma, 2 presuntos e 2 queijos.</p>
                     <div class="flex items-center gap-2 justify-between mt-3">
                         <p class="font-bold text-lg">R$ 9,00</p>
+                       
                         <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="misto quente" data-price="9.00">
                             <i class="fa fa-cart-plus text-lg text-white"></i>
                         </button>
@@ -70,7 +73,7 @@
             </div>
 
             <div class="flex gap-2 mt-2">
-                <img src="./assets/hamb-2.png" alt="Hamburguer-duplo" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <img src="./assets/mistão.png" alt="Mistão" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                 <div>
                     <p class="font-bold">Mistão</p>
                     <p class="text-sm">Pão de forma, 2 presuntos, 2 queijos, bacon e ovo.</p>
@@ -85,7 +88,7 @@
             </div>
 
             <div class="flex gap-2 mt-2">
-                <img src="./assets/hamb-3.png" alt="chedar duplex burguer" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <img src="./assets/hamburguer.png" alt="Hamburguer" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                 <div>
                     <p class="font-bold">Hamburguer</p>
                     <p class="text-sm">Pão, hamburguer, maionese e salada.</p>
@@ -100,7 +103,7 @@
             </div>
 
             <div class="flex gap-2 mt-2">
-                <img src="./assets/hamb-3.png" alt="X-Burguer" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <img src="./assets/x-burguer.png" alt="X-Burguer" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                 <div>
                     <p class="font-bold">X-Burguer</p>
                     <p class="text-sm">Pão, hamburguer, e queijo.</p>
@@ -117,7 +120,7 @@
             
 
             <div class="flex gap-2 mt-2">
-                <img src="./assets/hamb-4.png" alt="x-salada" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <img src="./assets/x-salada.png" alt="x-salada" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                 <div>
                     <p class="font-bold">X-Salada</p>
                     <p class="text-sm">Pão, hamburguer, queijo, batata palha, maionese e salada.</p>
@@ -132,7 +135,7 @@
             </div>
 
             <div class="flex gap-2 mt-2">
-                <img src="./assets/hamb-5.png" alt="X-Salada-burguer" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <img src="./assets/x-bacon-burguer.png" alt="X-Bacon-burguer" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                 <div>
                     <p class="font-bold">X-Bacon Burguer</p>
                     <p class="text-sm">Pão, hamburguer, queijo, bacon, milho, batata palha, maionese e salada.</p>
@@ -147,7 +150,7 @@
             </div>
 
             <div class="flex gap-2 mt-2">
-                <img src="./assets/hamb-6.png" alt="x-Picanha-salada" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <img src="./assets/x-egg-burguer.png" alt="x-Egg-Burguer" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                 <div>
                     <p class="font-bold">X-Egg Burguer</p>
                     <p class="text-sm">Pão, hamburguer, queijo, ovo, presunto, milho, maionese e salada.</p>
@@ -162,7 +165,7 @@
             </div>
 
             <div class="flex gap-2 mt-2">
-                <img src="./assets/hamb-7.png" alt="X-Egg-Burguer-Especial" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <img src="./assets/x-egg-burguer-especial.png" alt="X-Egg-Burguer-Especial" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                 <div>
                     <p class="font-bold">X-Egg-Burguer Especial</p>
                     <p class="text-sm">Pão, hamburguer, queijo, ovo, presunto, milho, batata palha, maionese e salada.</p>
@@ -177,7 +180,7 @@
             </div>
 
             <div class="flex gap-2 mt-2">
-                <img src="./assets/hamb-8.png" alt="x-lombo" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <img src="./assets/x-lombo.png" alt="x-lombo" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                 <div>
                     <p class="font-bold">X-Lombo</p>
                     <p class="text-sm">Pão, hamburguer, lombo defumado, bacon, queijo, presunto, milho, batata palha, maionese. </p>
@@ -192,7 +195,7 @@
             </div>
 
             <div class="flex gap-2 mt-2">
-                <img src="./assets/hamb-8.png" alt="X-Calabresa" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <img src="./assets/x-calabresa.png" alt="X-Calabresa" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                 <div>
                     <p class="font-bold">X-Calabresa</p>
                     <p class="text-sm">Pão, hamburguer, calabresa fatiada, queijo, ovo, milho e salada.</p>
@@ -206,7 +209,7 @@
                 
             </div>
             <div class="flex gap-2 mt-2">
-                <img src="./assets/hamb-8.png" alt="X-Tudo" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <img src="./assets/x-tudo.png" alt="X-Tudo" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                 <div>
                     <p class="font-bold">X-Tudo</p>
                     <p class="text-sm">Pão, hamburguer, hamburguer de frango, ovo, bacon, queijo, presunto, milho, batata palha, maionese e salada.</p>
@@ -220,7 +223,7 @@
                 
             </div>
             <div class="flex gap-2 mt-2">
-                <img src="./assets/hamb-8.png" alt="X-Filé" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <img src="./assets/x-filé.png" alt="X-Filé" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                 <div>
                     <p class="font-bold">X-Filé</p>
                     <p class="text-sm">Pão, bife de filé, queijo, ovo, bacon, milho, batata palha, maionese e salada.</p>
@@ -234,10 +237,10 @@
                 
             </div>
             <div class="flex gap-2 mt-2">
-                <img src="./assets/hamb-8.png" alt="X-Picanha" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <img src="./assets/x-picanha.png" alt="X-Picanha" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                 <div>
                     <p class="font-bold">X-Picanha</p>
-                    <p class="text-sm">Pão, hamburguerde picanha 120g, cheddar, ovo, bacon e salada</p>
+                    <p class="text-sm">Pão, hamburguer de picanha 120g, cheddar, ovo, bacon e salada</p>
                     <div class="flex items-center gap-2 justify-between mt-3">
                         <p class="font-bold text-lg">R$ 16,00</p>
                         <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="X-Picanha" data-price="16.00">
@@ -248,10 +251,10 @@
                 
             </div>
             <div class="flex gap-2 mt-2">
-                <img src="./assets/hamb-8.png" alt="X-Picanha-Especial" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <img src="./assets/x-picanha-especial.png" alt="X-Picanha-Especial" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                 <div>
                     <p class="font-bold">X-Picanha Especial</p>
-                    <p class="text-sm">Pão, hamburguer de picanha 120g, cheddar, ovo, bacon e salada.</p>
+                    <p class="text-sm">Pão, hamburguer de picanha 120g, 2 queijos, presunto, cheddar, ovo e salada.</p>
                     <div class="flex items-center gap-2 justify-between mt-3">
                         <p class="font-bold text-lg">R$ 16,00</p>
                         <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="X-Picanha-Especial" data-price="16.00">
@@ -262,7 +265,7 @@
                 
             </div>
             <div class="flex gap-2 mt-2">
-                <img src="./assets/hamb-8.png" alt="Framburguer" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <img src="./assets/framburguer.png" alt="Framburguer" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                 <div>
                     <p class="font-bold">Framburguer</p>
                     <p class="text-sm">Pão, hamburguer de frango, queijo, ovo, batata palha, maionese e salada.</p>
@@ -276,7 +279,7 @@
                 
             </div>
             <div class="flex gap-2 mt-2">
-                <img src="./assets/hamb-8.png" alt="Framburguer-Especial" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <img src="./assets/framburguer-especial.png" alt="Framburguer-Especial" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                 <div>
                     <p class="font-bold">Framburguer Especial</p>
                     <p class="text-sm">Pão, hamburguer de frango, queijo, bacon, ovo, presunto, milho batata palha, maionese.</p>
@@ -290,7 +293,7 @@
                 
             </div>
             <div class="flex gap-2 mt-2">
-                <img src="./assets/hamb-8.png" alt="Big-Frango" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <img src="./assets/big-frango.png" alt="Big-Frango" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                 <div>
                     <p class="font-bold">Big Frango</p>
                     <p class="text-sm">Pão, filé de frango, catupiry, milho, ovo, maionese e salada.</p>
@@ -304,7 +307,7 @@
                 
             </div>
             <div class="flex gap-2 mt-2">
-                <img src="./assets/hamb-8.png" alt="frango-desfiado" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <img src="./assets/frango-desfiado.png" alt="frango-desfiado" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                 <div>
                     <p class="font-bold">Frango Desfiado</p>
                     <p class="text-sm">Pão, frango desfiado, queijo, ovo, presunto, bacon, milho, batata palha e maionese.</p>
@@ -318,7 +321,7 @@
                 
             </div>
             <div class="flex gap-2 mt-2">
-                <img src="./assets/hamb-8.png" alt="frangão" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <img src="./assets/frangão.png" alt="frangão" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                 <div>
                     <p class="font-bold">Frangão</p>
                     <p class="text-sm">Pão, 2 hamburguers de frango, queijo, ovo, bacon, milho, batata palha, maionese e salada.</p>
@@ -332,7 +335,7 @@
                 
             </div>
             <div class="flex gap-2 mt-2">
-                <img src="./assets/hamb-8.png" alt="frango-com-catupiry" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <img src="./assets/frango-com-catupiry.png" alt="frango-com-catupiry" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                 <div>
                     <p class="font-bold">Frango com catupiry </p>
                     <p class="text-sm">Pão, frango desfiado, bacon, catupiry, ovo, milho, batata palha e maionese.</p>
@@ -346,7 +349,7 @@
                 
             </div>
             <div class="flex gap-2 mt-2">
-                <img src="./assets/hamb-8.png" alt="filé-com-catupiry" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <img src="./assets/filé-com-catupiry.png" alt="filé-com-catupiry" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                 <div>
                     <p class="font-bold">Filé com Catupiry </p>
                     <p class="text-sm">Pão, bife de filé, bacon, ovo, catupiry, milho, batata palha e maionese.</p>
@@ -360,7 +363,7 @@
                 
             </div>
             <div class="flex gap-2 mt-2">
-                <img src="./assets/hamb-8.png" alt="Ceará Burguer" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <img src="./assets/ceará-burguer.png" alt="Ceará Burguer" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                 <div>
                     <p class="font-bold">Ceará Burguer</p>
                     <p class="text-sm">Pão, hamburguer de frango, bacon, queijo, ovo, milho, batata palha, maionese e salada.</p>
@@ -374,7 +377,7 @@
                 
             </div>
             <div class="flex gap-2 mt-2">
-                <img src="./assets/hamb-8.png" alt="Laçador" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <img src="./assets/laçador.png" alt="Laçador" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                 <div>
                     <p class="font-bold">Laçador</p>
                     <p class="text-sm">Pão, hamburguer, bacon, presunto, queijo, ovo, milho, batata palha, maionese e salada.</p>
@@ -388,7 +391,7 @@
                 
             </div>
             <div class="flex gap-2 mt-2">
-                <img src="./assets/hamb-8.png" alt="Ceará-burguer-3-em-1" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <img src="./assets/ceara-buruger-3-em-1.png" alt="Ceará-burguer-3-em-1" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                 <div>
                     <p class="font-bold">Ceará Burguer 3 em 1</p>
                     <p class="text-sm">Pão, 3 hamburguer, 2 queijos, maionese e salada.</p>
@@ -402,7 +405,7 @@
                 
             </div>
             <div class="flex gap-2 mt-2">
-                <img src="./assets/hamb-8.png" alt="Ceará-burguer-4x4" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <img src="./assets/ceara-burguer-4x4.png" alt="Ceará-burguer-4x4" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                 <div>
                     <p class="font-bold">Ceará Burguer 4x4</p>
                     <p class="text-sm">Pão, 2 hamburguers, 2 hamburguers de frango, 2 queijos, bacon, ovo, maionese e salada.</p>
@@ -416,7 +419,7 @@
                 
             </div>
             <div class="flex gap-2 mt-2">
-                <img src="./assets/hamb-8.png" alt="Ceará-burguer-vegetariano" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <img src="./assets/vegetariano.png" alt="Ceará-burguer-vegetariano" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                 <div>
                     <p class="font-bold">Ceará Burguer Vegetariano</p>
                     <p class="text-sm">Pão, queijo, ovo, banana, cebola, catupiry, milho, batata palha, maionese e salada. </p>
@@ -430,7 +433,7 @@
                 
             </div>
             <div class="flex gap-2 mt-2">
-                <img src="./assets/hamb-8.png" alt="Ceará-burguer-duplo-picanha" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <img src="./assets/duplo-picanha.png" alt="Ceará-burguer-duplo-picanha" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                 <div>
                     <p class="font-bold">Ceará Burguer Duplo Picanha</p>
                     <p class="text-sm">Pão, queijo, ovo, banana, cebola, catupiry, milho, batata palha, maionese e salada. </p>
@@ -451,13 +454,13 @@
         </div>
         <div  class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16 bg-purple-700" id="menu">
             <div class="flex gap-2 mt-2 w-full">
-                <img src="./assets/refri-1.png" alt="Coca-cola lata" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <img src="./assets/vitamina-acai-500.png" alt=" Vitamina Açaí" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                 <div class="w-full">
                     <p class="font-bold">CearAçaí 500ml</p>
                     <p class="text-sm">Banana, leite em pó, granola e açaí</p>
                     <div class="flex items-center gap-2 justify-between mt-3">
                         <p class="font-bold text-lg">R$ 14,00</p>
-                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="cearaçai-500ml" data-price="14.00">
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Cearaçaí 500ml" data-price="14.00">
                             <i class="fa fa-cart-plus text-lg text-white"></i>
                         </button>
                     </div>
@@ -466,13 +469,13 @@
             </div>
 
             <div class="flex gap-2 mt-2 w-full">
-                <img src="./assets/refri-2.png" alt="Guaraná-antartica lata" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <img src="./assets/cupuaçu.png" alt="Cearaçai Casado 500ml" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                 <div class="w-full">
                     <p class="font-bold">CearAçaí Casado 500ml </p>
                     <p class="text-sm">Açaí, creme de cupuaçu, leite em pó, leite condesado</p>
                     <div class="flex items-center gap-2 justify-between mt-3">
                         <p class="font-bold text-lg">R$ 22,00</p>
-                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="cearaçai-casado-500ml" data-price="22.00">
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Cearaçai Casado 500ml" data-price="22.00">
                             <i class="fa fa-cart-plus text-lg text-white"></i>
                         </button>
                     </div>
@@ -481,13 +484,13 @@
             </div>
             
             <div class="flex gap-2 mt-2 w-full">
-                <img src="./assets/refri-2.png" alt="CearAçaí Ovomaltine" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <img src="./assets/ovomaltine.png" alt="CearAçaí Ovomaltine" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                 <div class="w-full">
                     <p class="font-bold">CearAçaí Ovomaltine 500ml </p>
                     <p class="text-sm">Açaí, ovomaltine, morango e chantilly</p>
                     <div class="flex items-center gap-2 justify-between mt-3">
                         <p class="font-bold text-lg">R$ 23,00</p>
-                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="cearaçai-ovomaltine-500ml" data-price="23.00">
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Cearaçai Ovomaltine 500ml" data-price="23.00">
                             <i class="fa fa-cart-plus text-lg text-white"></i>
                         </button>
                     </div>
@@ -496,13 +499,13 @@
             </div>
 
             <div class="flex gap-2 mt-2 w-full">
-                <img src="./assets/refri-2.png" alt="CearAçaí Kids" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <img src="./assets/açai-kids.png" alt="CearAçaí Kids" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                 <div class="w-full">
                     <p class="font-bold">CearAçaí Kids 500ml </p>
                     <p class="text-sm">Açaí, leite em pó, MM e chantilly.</p>
                     <div class="flex items-center gap-2 justify-between mt-3">
                         <p class="font-bold text-lg">R$ 23,90</p>
-                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="cearaçai-kids-500ml" data-price="23.90">
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Cearaçai Kids 500ml" data-price="23.90">
                             <i class="fa fa-cart-plus text-lg text-white"></i>
                         </button>
                     </div>
@@ -511,13 +514,13 @@
             </div>
 
             <div class="flex gap-2 mt-2 w-full">
-                <img src="./assets/refri-2.png" alt="CearAçaí Sensação" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <img src="./assets/sensacao.png" alt="CearAçaí Sensação" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                 <div class="w-full">
                     <p class="font-bold">CearAçaí Sensação 500ml </p>
                     <p class="text-sm">Açaí, morango, raspa de chocolate e leite em pó.</p>
                     <div class="flex items-center gap-2 justify-between mt-3">
                         <p class="font-bold text-lg">R$ 22,00</p>
-                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="cearaçai-sensação-500ml" data-price="22.00">
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Cearaçai Sensação 500ml" data-price="22.00">
                             <i class="fa fa-cart-plus text-lg text-white"></i>
                         </button>
                     </div>
@@ -526,13 +529,13 @@
             </div>
 
             <div class="flex gap-2 mt-2 w-full">
-                <img src="./assets/refri-2.png" alt="CearAçaí Salada de Frutas" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <img src="./assets/salada-de-frutas.png" alt="CearAçaí Salada de Frutas" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                 <div class="w-full">
                     <p class="font-bold">CearAçaí Salada de Frutas 500ml </p>
                     <p class="text-sm">Açaí, morango, raspa de chocolate e leite em pó.</p>
                     <div class="flex items-center gap-2 justify-between mt-3">
                         <p class="font-bold text-lg">R$ 23,00</p>
-                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="cearaçai-salada-de-frutas-500ml" data-price="23.00">
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Cearaçai Salada De Frutas 500ml" data-price="23.00">
                             <i class="fa fa-cart-plus text-lg text-white"></i>
                         </button>
                     </div>
@@ -541,13 +544,13 @@
             </div>
             
             <div class="flex gap-2 mt-2 w-full">
-                <img src="./assets/refri-2.png" alt="CearAçaí Biz" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <img src="./assets/acai-biz-500ml.png" alt="CearAçaí Biz" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                 <div class="w-full">
                     <p class="font-bold">CearAçaí Biz 500ml </p>
                     <p class="text-sm">Açaí, chantilly, biz e morango.</p>
                     <div class="flex items-center gap-2 justify-between mt-3">
                         <p class="font-bold text-lg">R$ 23,90</p>
-                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="cearaçai-sensação-500ml" data-price="23.90">
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Cearaçai Biz 500ml" data-price="23.90">
                             <i class="fa fa-cart-plus text-lg text-white"></i>
                         </button>
                     </div>
@@ -556,13 +559,13 @@
             </div>
             
             <div class="flex gap-2 mt-2 w-full">
-                <img src="./assets/refri-2.png" alt="Creme de Morango" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <img src="./assets/creme-morango.png" alt="Creme de Morango" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                 <div class="w-full">
                     <p class="font-bold">Creme de Morango 500ml </p>
                     <p class="text-sm">Morango e leite condesado.</p>
                     <div class="flex items-center gap-2 justify-between mt-3">
                         <p class="font-bold text-lg">R$ 24,90</p>
-                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="creme-de-morango-500ml" data-price="24.90">
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Creme de Morango 500ml" data-price="24.90">
                             <i class="fa fa-cart-plus text-lg text-white"></i>
                         </button>
                     </div>
@@ -571,13 +574,13 @@
             </div>
             
             <div class="flex gap-2 mt-2 w-full">
-                <img src="./assets/refri-2.png" alt="Creme de Cupuaçu" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <img src="./assets/crme-cupuaçu.png" alt="Creme de Cupuaçu" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                 <div class="w-full">
                     <p class="font-bold">Creme de Cupuaçu 500ml </p>
                     <p class="text-sm">Cupuaçu e leite condesado.</p>
                     <div class="flex items-center gap-2 justify-between mt-3">
                         <p class="font-bold text-lg">R$ 25,90</p>
-                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="creme-de-cupuaçu-500ml" data-price="25.90">
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Creme de Cupuaçu 500ml" data-price="25.90">
                             <i class="fa fa-cart-plus text-lg text-white"></i>
                         </button>
                     </div>
@@ -586,13 +589,13 @@
             </div>
             
             <div class="flex gap-2 mt-2 w-full">
-                <img src="./assets/refri-2.png" alt="CearAçaí Super 500ml" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <img src="./assets/super-acai.png" alt="CearAçaí Super 500ml" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                 <div class="w-full">
                     <p class="font-bold">CearAçaí Super 500ml </p>
                     <p class="text-sm">Açaí, morango, nutella, leite em pó e 1 bola de sorvete.</p>
                     <div class="flex items-center gap-2 justify-between mt-3">
                         <p class="font-bold text-lg">R$ 29,90</p>
-                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="cearaçai-super-500ml" data-price="29.90">
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Cearaçai Super 500ml" data-price="29.90">
                             <i class="fa fa-cart-plus text-lg text-white"></i>
                         </button>
                     </div>
@@ -609,7 +612,7 @@
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
             <div class="flex gap-2 mt-2 w-full">
-                <img src="./assets/refri-1.png" alt="Espaguete a bolonhesa" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <img src="./assets/espaguete-a-bolonhesa-peq.png" alt="Espaguete a bolonhesa" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                 <div class="w-full">
                     <p class="font-bold">Espaguete a Bolonhesa Peq</p>
                     <p class="text-sm">Delicioso espaguete a bolonhesa ao forno.</p>
@@ -624,7 +627,7 @@
             </div>
 
             <div class="flex gap-2 mt-2 w-full">
-                <img src="./assets/refri-1.png" alt="Espaguete a bolonhesa" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <img src="./assets/espaguete-a-bolonhesa-grd.png" alt="Espaguete a bolonhesa" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                 <div class="w-full">
                     <p class="font-bold">Espaguete a Bolonhesa Grd </p>
                     <p class="text-sm">Delicioso espaguete a bolonhesa ao forno.</p>
@@ -639,7 +642,7 @@
             </div>
 
              <div class="flex gap-2 mt-2 w-full">
-                <img src="./assets/refri-1.png" alt="Espaguete na Chapa" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <img src="./assets/espaguete-na-chapa-peq.png" alt="Espaguete na Chapa" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                 <div class="w-full">
                     <p class="font-bold">Espaguete na Chapa Peq </p>
                     <p class="text-sm">Delicioso espaguete na chapa com bacon,frango desfiado e vinagrete.</p>
@@ -654,7 +657,7 @@
             </div>
 
             <div class="flex gap-2 mt-2 w-full">
-                <img src="./assets/refri-1.png" alt="Espaguete na Chapa" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <img src="./assets/espaguete-na-chapa-grd.png" alt="Espaguete na Chapa" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                 <div class="w-full">
                     <p class="font-bold">Espaguete na Chapa Grd </p>
                     <p class="text-sm">Delicioso espaguete na chapa com bacon,frango desfiado e vinagrete.</p>
@@ -669,7 +672,7 @@
             </div>
 
             <div class="flex gap-2 mt-2 w-full">
-                <img src="./assets/refri-1.png" alt="Big Espaguete na Chapa" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <img src="./assets/big-espaguete-na-chapa.png" alt="Big Espaguete na Chapa" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                 <div class="w-full">
                     <p class="font-bold">Big Espaguete na Chapa</p>
                     <p class="text-sm">Delicioso espaguete na chapa com bacon,frango desfiado, vinagrete, calabresa, mussarela e presunto.</p>
@@ -694,7 +697,7 @@
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
             <div class="flex gap-2 mt-2 w-full">
-                <img src="./assets/refri-1.png" alt="Omelete Especial" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <img src="./assets/omelete-especial.png" alt="Omelete Especial" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                 <div class="w-full">
                     <p class="font-bold">Omelete Especial</p>
                     <p class="text-sm">Ovo, bacon, queijo, presunto, frango desfiado, batata palha, salada, cheddar, catupiry.</p>
@@ -709,7 +712,7 @@
             </div>
 
             <div class="flex gap-2 mt-2 w-full">
-                <img src="./assets/refri-2.png" alt="Omelete" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <img src="./assets/omelete.png" alt="Omelete" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                 <div class="w-full">
                     <p class="font-bold">Omelete</p>
                     <p class="text-sm">Ovo, bacon, presunto, frango desfiado, batata, milho e salada.</p>
@@ -724,7 +727,7 @@
             </div>
 
             <div class="flex gap-2 mt-2 w-full">
-                <img src="./assets/refri-2.png" alt="Omelete com Cheddar" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <img src="./assets/omelete-com-cheddar.png" alt="Omelete com Cheddar" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                 <div class="w-full">
                     <p class="font-bold">Omelete com Cheddar</p>
                     <p class="text-sm">Ovo, bacon, queijo, presunto, frango desfiado, batata, milho, salada e cheddar.</p>
@@ -739,7 +742,7 @@
             </div>
 
             <div class="flex gap-2 mt-2 w-full">
-                <img src="./assets/refri-2.png" alt="Omelete com catupiry" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <img src="./assets/omelete-com-catupiry.png" alt="Omelete com catupiry" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                 <div class="w-full">
                     <p class="font-bold">Omelete com catupiry</p>
                     <p class="text-sm">Ovo, bacon, queijo, presunto, frango desfiado, batata, milho, salada e catupiry.</p>
@@ -754,7 +757,7 @@
             </div>
 
             <div class="flex gap-2 mt-2 w-full">
-                <img src="./assets/refri-2.png" alt="Omelete Tropical" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <img src="./assets/omelete-tropical.png" alt="Omelete Tropical" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                 <div class="w-full">
                     <p class="font-bold">Omelete Tropical</p>
                     <p class="text-sm">Ovo, queijo milho, catupiry, banana e salada.</p>
@@ -776,7 +779,7 @@
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
             <div class="flex gap-2 mt-2 w-full">
-                <img src="./assets/refri-1.png" alt="Fritas 400gr" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <img src="./assets/fritas-400gr.png" alt="Fritas 400gr" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                 <div class="w-full">
                     <p class="font-bold">Fritas 430gr</p>
                     <p class="text-sm">Porção deliciosa de batata frita.</p>
@@ -791,7 +794,7 @@
             </div>
 
             <div class="flex gap-2 mt-2 w-full">
-                <img src="./assets/refri-2.png" alt="Fritas com queijo 400gr" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <img src="./assets/fritas-com-queijo.png" alt="Fritas com queijo 400gr" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                 <div class="w-full">
                     <p class="font-bold">Fritas com Queijo 400gr</p>
                     <p class="text-sm">Porção deliciosa de batata frita com queijo.</p>
@@ -806,7 +809,7 @@
             </div>
 
             <div class="flex gap-2 mt-2 w-full">
-                <img src="./assets/refri-2.png" alt="Fritas com queijo e bacon 400gr" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <img src="./assets/fritas-bacon-cheddar.png" alt="Fritas com queijo e bacon 400gr" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                 <div class="w-full">
                     <p class="font-bold">Fritas com Queijo e Bacon 400gr</p>
                     <p class="text-sm">Porção deliciosa de batata frita com queijo e bacon.</p>
@@ -858,7 +861,7 @@
             </div>
 
             <div class="flex gap-2 mt-2 w-full">
-                <img src="./assets/refri-2.png" alt="Cerveja latão 475ml" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <img src="./assets/heneken-latao.png" alt="Cerveja latão 475ml" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                 <div class="w-full">
                     <p class="font-bold">Cerveja Latão 475ml</p>
                     <p class="text-sm">Cerveja Latão geladinha.</p>
@@ -873,7 +876,7 @@
             </div>
 
             <div class="flex gap-2 mt-2 w-full">
-                <img src="./assets/refri-2.png" alt="Skol Beats 269ml" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <img src="./assets/skol-beats.png" alt="Skol Beats 269ml" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                 <div class="w-full">
                     <p class="font-bold">Skol Beats 269ml</p>
                     <p class="text-sm">Skol Beats geladinha.</p>
@@ -888,7 +891,7 @@
             </div>
 
             <div class="flex gap-2 mt-2 w-full">
-                <img src="./assets/refri-2.png" alt="Água 500ml" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <img src="./assets/agua-500ml.png" alt="Água 500ml" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                 <div class="w-full">
                     <p class="font-bold">Água 500ml</p>
                     <p class="text-sm">Água gelada 500ml.</p>
@@ -903,7 +906,7 @@
             </div>
 
             <div class="flex gap-2 mt-2 w-full">
-                <img src="./assets/refri-2.png" alt="Água com Gás 500ml" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <img src="./assets/agua-500ml.png" alt="Água com Gás 500ml" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                 <div class="w-full">
                     <p class="font-bold">Água com Gás 500ml</p>
                     <p class="text-sm">Água Gelada com Gás 500ml.</p>
@@ -918,7 +921,7 @@
             </div>
 
             <div class="flex gap-2 mt-2 w-full">
-                <img src="./assets/refri-2.png" alt="H2O 500ml" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <img src="./assets/h2o-500ml.png" alt="H2O 500ml" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                 <div class="w-full">
                     <p class="font-bold">H2O 500ml</p>
                     <p class="text-sm">H2O 500ml.</p>
@@ -933,7 +936,7 @@
             </div>
 
             <div class="flex gap-2 mt-2 w-full">
-                <img src="./assets/refri-2.png" alt="Água Tônica Lata" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <img src="./assets/agua-tonica.png" alt="Água Tônica Lata" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                 <div class="w-full">
                     <p class="font-bold">Água Tônica Lata</p>
                     <p class="text-sm">Água Tônica Lata.</p>
@@ -948,7 +951,7 @@
             </div>
 
             <div class="flex gap-2 mt-2 w-full">
-                <img src="./assets/refri-2.png" alt="Energético Red Bull" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <img src="./assets/redbull.png" alt="Energético Red Bull" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                 <div class="w-full">
                     <p class="font-bold">Energético Red Bull</p>
                     <p class="text-sm">Energético Red Bull.</p>
@@ -963,7 +966,7 @@
             </div>
 
             <div class="flex gap-2 mt-2 w-full">
-                <img src="./assets/refri-2.png" alt="Monster 473ml" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <img src="./assets/monster.png" alt="Monster 473ml" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                 <div class="w-full">
                     <p class="font-bold">Monster 473ml</p>
                     <p class="text-sm">Monster 473ml.</p>
@@ -978,7 +981,7 @@
             </div>
 
             <div class="flex gap-2 mt-2 w-full">
-                <img src="./assets/refri-2.png" alt="Mate Couro 1L" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <img src="./assets/mate-couro-1l.png" alt="Mate Couro 1L" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                 <div class="w-full">
                     <p class="font-bold">Mate Couro 1L</p>
                     <p class="text-sm">Mate Couro 1L.</p>
@@ -993,7 +996,7 @@
             </div>
 
             <div class="flex gap-2 mt-2 w-full">
-                <img src="./assets/refri-2.png" alt="Refri Sabores 200ml" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <img src="./assets/refir-200ml.png" alt="Refri Sabores 200ml" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                 <div class="w-full">
                     <p class="font-bold">Refri Sabores 200ml</p>
                     <p class="text-sm">Refri Sabores 200ml.</p>
@@ -1008,7 +1011,7 @@
             </div>
 
             <div class="flex gap-2 mt-2 w-full">
-                <img src="./assets/refri-2.png" alt="Refrigerante Sabores 2L" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <img src="./assets/refri-2l-sabores.png" alt="Refrigerante Sabores 2L" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                 <div class="w-full">
                     <p class="font-bold">Refrigerante Sabores 2L</p>
                     <p class="text-sm">Refrigerante Sabores 2L.</p>
@@ -1023,7 +1026,7 @@
             </div>
 
             <div class="flex gap-2 mt-2 w-full">
-                <img src="./assets/refri-2.png" alt="Refrigerante Sabores Lata" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <img src="./assets/refrigerante-sabores-lata.png" alt="Refrigerante Sabores Lata" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
                 <div class="w-full">
                     <p class="font-bold">Refrigerante Sabores Lata</p>
                     <p class="text-sm">Refrigerante Sabores Lata.</p>
